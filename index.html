@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script>
+            function fancy (arr,s,r) {
+                if(r==true) { //this extra if reverses the order
+                    for(var i = arr.length-1; i>=0; i--) {
+                        console.log(i +" "+s+" "+ arr[i]);
+                    }
+                }
+                else {
+                    for(var i = 0; i<arr.length; i++) {  //this was the answer to the main question
+                        console.log(i +" "+s+" "+ arr[i]);
+                    }
+                }
+            }
+            fancy(["James", "Jill", "Jane", "Jack"],"=>",true);
+
+        </script>   
+    </head>
+    <body>
+    
+    </body>
+</html>
